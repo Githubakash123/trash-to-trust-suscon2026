@@ -1,0 +1,4 @@
+protocol,alpha,beta,gamma,delta,note
+Equal,0.25,0.25,0.25,0.25,
+AHP_expert,0.1699,0.4729,0.0729,0.2844,consistency_ratio=0.019 (OK)
+Entropy_objective,0.0767,0.1033,0.0,0.82,data-driven

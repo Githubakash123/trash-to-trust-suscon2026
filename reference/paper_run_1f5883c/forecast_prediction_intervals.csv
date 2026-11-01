@@ -1,0 +1,2 @@
+interval,halfwidth_tons,empirical_coverage_on_final_year,rel_width_vs_mean,n_calib,n_eval
+split-conformal 90% (held-out calib),11431.8,0.912,0.867,68,34

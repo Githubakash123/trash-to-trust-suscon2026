@@ -1,0 +1,54 @@
+name: reproduce-paper
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 1 * *"   # monthly: catch dependency or platform drift
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install pinned environment
+        run: pip install -r requirements.txt
+      - name: Check code and data are the paper's files
+        run: python verification/check_provenance.py
+      - name: Regenerate every result and verify every claim
+        run: python reproduce.py
+      - name: Publish report to the job summary
+        if: always()
+        run: cat VERIFICATION_REPORT.md >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Upload outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reproduced-outputs
+          path: |
+            outputs/
+            VERIFICATION_REPORT.md
+
+  notebook:
+    # Executes notebooks/run_in_colab.ipynb exactly as Colab does: isolated uv
+    # venv with the pinned requirements, then the full reproduction.
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install notebook runner
+        run: pip install nbconvert nbclient ipykernel
+      - name: Execute the Colab notebook
+        env:
+          T2T_VENV: ${{ runner.temp }}/t2t
+        run: jupyter nbconvert --to notebook --execute notebooks/run_in_colab.ipynb --output executed.ipynb --ExecutePreprocessor.timeout=3000

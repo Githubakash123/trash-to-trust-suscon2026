@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper and this repository."
+title: "Trash to Trust: code and verification for the SUSCON XIII full paper"
+authors:
+  - family-names: Kundu
+    given-names: Akash
+    affiliation: "Vinod Gupta School of Management, Indian Institute of Technology Kharagpur"
+repository-code: "https://github.com/Githubakash123/trash-to-trust-suscon2026"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-01"
+preferred-citation:
+  type: conference-paper
+  title: "Trash to Trust: Layer-Wise Validation of an Integrated Decision Framework for Circular and Equitable Municipal Solid Waste Management in India"
+  authors:
+    - family-names: Kundu
+      given-names: Akash
+  conference:
+    name: "SUSCON XIII, Indian Institute of Management Shillong"
+  year: 2026
+references:
+  - type: dataset
+    title: "Waste Management and Recycling in Indian Cities"
+    authors:
+      - name: "Krishna Yadu"
+    url: "https://www.kaggle.com/datasets/krishnayadav456wrsty/waste-management-and-recycling-in-indian-cities"
+    license: MIT

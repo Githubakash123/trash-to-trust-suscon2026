@@ -1,0 +1,3 @@
+objective,recycling_share,advanced_recycling_share,plastic_loop_score,system_circularity
+without_PCI,0.55,-0.0,0.55,0.79
+with_PCI,0.55,0.2,0.73,0.78

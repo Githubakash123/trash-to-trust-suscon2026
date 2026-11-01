@@ -1,0 +1,7 @@
+metric,value,p
+"Pearson r (PCI,MCI)",0.414,0.0148
+"Spearman rho (PCI,MCI)",0.328,0.0584
+R2 of MCI explaining PCI,0.172,
+"corr(PCI-residual, collection+substitution)",0.212,
+PCI weight-rank stability (Spearman),0.822,
+AHP consistency ratio,0.019,

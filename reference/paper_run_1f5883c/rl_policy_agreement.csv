@@ -1,0 +1,6 @@
+index,balanced,climate_first,circularity_first,budget_austere,leakage_first
+balanced,1.0,0.985,0.973,0.694,0.974
+climate_first,0.985,1.0,0.959,0.69,0.974
+circularity_first,0.973,0.959,1.0,0.683,0.948
+budget_austere,0.694,0.69,0.683,1.0,0.692
+leakage_first,0.974,0.974,0.948,0.692,1.0

@@ -1,0 +1,5 @@
+method,base_top1,P_top1_stable,mean_spearman_vs_base
+TOPSIS,Mechanical plastic recycling,0.99,0.982
+SAW,Mechanical plastic recycling,0.999,0.957
+WPM,Mechanical plastic recycling,0.999,0.975
+VIKOR,Mechanical plastic recycling,0.959,0.935

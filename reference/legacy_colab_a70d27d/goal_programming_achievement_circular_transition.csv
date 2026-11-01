@@ -1,0 +1,6 @@
+goal,target,achieved,bad_deviation,status
+G1 emissions <= 65% of baseline,4777902.48,3273854.6279999996,0.0,met
+G2 circularity >= 65% of waste,8721334.05,11458491.197999999,0.0,met
+G3 leakage <= 40% of baseline,1083014.664,826514.1192000001,0.0,met
+G4 cost <= 115% of baseline,682655588.25,555481891.8,0.0,met
+G5 landfill <= 15% of waste,2012615.5499999998,798337.5015,0.0,met

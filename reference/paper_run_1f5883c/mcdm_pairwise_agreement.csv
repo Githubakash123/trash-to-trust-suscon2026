@@ -1,0 +1,7 @@
+method_A,method_B,spearman,kendall,same_top1
+TOPSIS,SAW,0.821,0.619,True
+TOPSIS,WPM,0.786,0.619,True
+TOPSIS,VIKOR,0.786,0.619,True
+SAW,WPM,0.929,0.81,True
+SAW,VIKOR,0.929,0.81,True
+WPM,VIKOR,1.0,1.0,True

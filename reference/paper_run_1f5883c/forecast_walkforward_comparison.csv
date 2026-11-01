@@ -1,0 +1,4 @@
+method,walkfwd_MAE,skill_vs_naive
+GBR + covariates,5869.2,0.2307
+HistoricalMean,6543.3,0.1423
+NaivePersistence,7628.8,0.0

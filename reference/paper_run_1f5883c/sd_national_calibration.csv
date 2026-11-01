@@ -1,0 +1,13 @@
+target,param,estimate,std_err,ci_low,ci_high
+circularity,c0/l0 (fixed),0.447,0.0,0.447,0.447
+circularity,cinf/linf,0.0171,58.5802,-114.8001,114.8342
+circularity,rate_k/m,0.0084,1.1643,-2.2736,2.2905
+circularity,_fit_R2,0.3048,,,
+circularity,_fit_RMSE,0.00729,,,
+circularity,_cov_condition_number,203300000.0,,,
+leakage,c0/l0 (fixed),0.2639,0.0,0.2639,0.2639
+leakage,cinf/linf,0.2557,0.0357,0.1857,0.3256
+leakage,rate_k/m,1.031,16.294,-30.9053,32.9673
+leakage,_fit_R2,0.023,,,
+leakage,_fit_RMSE,0.02919,,,
+leakage,_cov_condition_number,571100.0,,,

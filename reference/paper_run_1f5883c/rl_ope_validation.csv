@@ -1,0 +1,4 @@
+estimator,value,abs_error
+on-policy MC (ground truth),-0.442,0.0
+weighted importance sampling,-0.597,0.155
+fitted-Q evaluation (FQE),-0.603,0.161

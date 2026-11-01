@@ -1,0 +1,2 @@
+model,note,observations
+correlation_fallback,ARDL requires more time-series observations. Correlation matrix exported instead.,6

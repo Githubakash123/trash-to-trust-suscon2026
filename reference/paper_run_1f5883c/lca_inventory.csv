@@ -1,0 +1,24 @@
+pathway,param,low,mode,high,unit,source
+WtE,LHV_MJ_per_kg,7.5,9.0,10.5,MJ/kg,Indian mixed MSW LHV
+WtE,eff_electric,0.16,0.21,0.26,frac,mass-burn net elec eff
+WtE,grid_EF_kgCO2_kWh,0.71,0.79,0.9,kgCO2/kWh,CEA India 2022-23
+WtE,EF_process_kgCO2_t,850.0,990.0,1150.0,kgCO2/t,fossil-C combustion
+WtE,cost_usd_t,90.0,110.0,140.0,USD/t,Asian MSW cost review
+WtE,recovery_pct,18.0,25.0,32.0,%,energy recovery only
+Landfill,L0_kgCH4_t,50.0,62.0,75.0,kgCH4/t,IPCC L0 (DOC-based)
+Landfill,MCF,0.6,0.8,1.0,frac,methane correction factor
+Landfill,gas_capture,0.0,0.3,0.55,frac,Indian semi-aerobic capture
+Landfill,cost_usd_t,40.0,60.0,80.0,USD/t,Asian MSW cost review
+Landfill,recovery_pct,2.0,5.0,10.0,%,marginal recovery
+Mechanical recycling,ghg_net_kgCO2e_t,-650.0,-500.0,-350.0,kgCO2e/t,virgin-displacement credit
+Mechanical recycling,cost_usd_t,95.0,120.0,150.0,USD/t,Asian cost review
+Mechanical recycling,recovery_pct,78.0,85.0,90.0,%,MRF yield
+Composting,ghg_net_kgCO2e_t,-70.0,-41.0,-10.0,kgCO2e/t,EEA/ACS organics
+Composting,cost_usd_t,20.0,30.0,45.0,USD/t,Asian cost review
+Composting,recovery_pct,50.0,60.0,70.0,%,compost yield
+Anaerobic digestion,ghg_net_kgCO2e_t,-170.0,-123.0,-80.0,kgCO2e/t,biogas credit
+Anaerobic digestion,cost_usd_t,55.0,70.0,90.0,USD/t,Asian cost review
+Anaerobic digestion,recovery_pct,68.0,75.0,82.0,%,digestate+energy
+Advanced recycling,ghg_net_kgCO2e_t,-50.0,50.0,180.0,kgCO2e/t,pyrolysis range
+Advanced recycling,cost_usd_t,160.0,200.0,260.0,USD/t,chemical recycling
+Advanced recycling,recovery_pct,55.0,70.0,80.0,%,monomer yield

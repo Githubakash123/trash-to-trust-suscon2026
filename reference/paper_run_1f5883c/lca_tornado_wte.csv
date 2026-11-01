@@ -1,0 +1,5 @@
+parameter,low_value,high_value,swing_kgCO2e_t
+EF_process,435.2,735.2,300.0
+eff_electric,674.0,476.5,197.5
+LHV,644.4,506.1,138.2
+grid_EF,617.2,517.5,99.8

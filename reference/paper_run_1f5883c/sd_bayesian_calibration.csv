@@ -1,0 +1,4 @@
+param,mean,cri95_low,cri95_high
+Cinf,0.4238,0.33,0.45
+k,1.0771,0.01,2.8995
+"posterior_corr(Cinf,k)",0.4746,,

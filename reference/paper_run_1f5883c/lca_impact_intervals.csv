@@ -1,0 +1,7 @@
+pathway,ghg_net_mean,ghg_net_p05,ghg_net_p95,cost_mean,cost_p05,cost_p95
+Mechanical recycling,-500.1,-602.2,-397.2,121.7,103.4,141.1
+Anaerobic digestion,-124.2,-155.2,-94.0,71.7,60.2,84.1
+Composting,-40.4,-60.9,-19.7,31.8,23.7,40.7
+Advanced recycling,59.8,-15.4,140.9,206.6,173.8,242.6
+Waste-to-energy,576.1,440.2,711.5,113.3,97.0,131.5
+Landfill,998.4,686.4,1360.0,60.0,46.3,73.7

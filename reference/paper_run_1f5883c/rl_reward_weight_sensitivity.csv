@@ -1,0 +1,6 @@
+weight_scheme,mean_return,cvar10_return,final_circularity,final_leakage,mean_cost,P_legal_ok
+balanced,-0.457,-4.504,0.775,0.106,6.66,0.821
+climate_first,-0.457,-4.518,0.775,0.106,6.68,0.824
+circularity_first,-0.469,-4.489,0.776,0.106,6.63,0.82
+budget_austere,-1.067,-4.574,0.73,0.116,5.17,0.674
+leakage_first,-0.464,-4.511,0.775,0.106,6.64,0.822

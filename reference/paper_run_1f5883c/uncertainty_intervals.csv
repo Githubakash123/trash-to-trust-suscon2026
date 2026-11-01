@@ -1,0 +1,4 @@
+output,mean,p05,p95
+circularity_2035 (diversion),0.561,0.531,0.591
+GHG_reduction_vs_BAU_pct,7.773,5.674,10.095
+plastic_circularity_2035 (PCI proxy),0.842,0.796,0.888

@@ -1,0 +1,5 @@
+policy,environment,mean_return,cvar10_return,final_circularity,mean_cost,P_legal_ok
+risk_neutral,nominal,-0.46,-4.5,0.775,6.65,0.823
+risk_neutral,stress,-2.582,-4.514,0.676,7.73,0.34
+risk_averse(CVaR),nominal,-0.543,-4.609,0.776,6.92,0.834
+risk_averse(CVaR),stress,-2.233,-4.613,0.697,7.75,0.386

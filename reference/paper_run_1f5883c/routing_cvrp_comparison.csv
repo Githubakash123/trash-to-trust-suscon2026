@@ -1,0 +1,3 @@
+problem,method,distance_km,time_h,fuel_L,transport_GHG_kgCO2
+CVRP_8veh_cap300,Greedy nearest-feasible,31009.9,775.2,10853.5,29087.3
+CVRP_8veh_cap300,OR-Tools CVRP (GLS),23570.3,589.3,8249.6,22108.9

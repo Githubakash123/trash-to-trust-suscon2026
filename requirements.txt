@@ -1,0 +1,12 @@
+# Exact versions of the run recorded in VERIFICATION_REPORT.md. Python >= 3.12.
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+statsmodels==0.14.6
+ortools==9.15.6755
+protobuf==6.33.6
+shap==0.52.0
+numba==0.65.1
+llvmlite==0.47.0
+matplotlib==3.11.0
