@@ -41,7 +41,7 @@ python reproduce.py
 
 ## Result of the reference run
 
-On Windows 11 with Python 3.14.6, the run takes 5.1 minutes. All **30 of 30** analysis tables are byte-identical to the paper's run, and **61 of 61** claims land in their documented status:
+On Windows 11 with Python 3.14.6, the run takes 5.1 minutes. All **30 of 30** analysis tables are byte-identical to the paper's run, and **61 of 61** claims land in their documented status. The clean Ubuntu CI run (Python 3.12) and the executed Colab notebook give the same 61 of 61. On Linux, 29 of 30 tables are byte-identical. The 30th, `sd_national_calibration.csv`, differs in a single standard error (58.5802 vs 58.5794) of the system-dynamics fit, whose covariance has a condition number of about 2 × 10⁸. That size of floating-point drift is expected for such a fit, and no paper claim uses the value.
 
 | Status | Claims | Meaning |
 |---|---:|---|
