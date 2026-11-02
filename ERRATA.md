@@ -41,6 +41,18 @@ Treat the panel as a **testbed with known-noise ground truth**: it shows how muc
 | E-V8 | 4.12: the 7.8 % GHG reduction is "propagated through the coupled chain, with emission factors, substitution credits and parameter uncertainty carried forward" | `ablations.uncertainty_propagation` computes `GHG reduction = coupling × (circularity gain)`, where **coupling ~ triangular(0.45, 0.60, 0.75) is an assumption**. No LCA emission factor or substitution credit enters. 7.8 % ≈ 0.60 × (0.561 − 0.432). The interval reflects the spread of the assumed coupling, not of the chain. The ~fourfold gap between diversion and climate is therefore set by an assumed number, not found. |
 | E-V1 | 4.5: R² = 0.26 from a single random split | The figure exists only in a pre-pipeline Colab output (`reference/legacy_colab_a70d27d/quantity_prediction_model_metrics.csv`: R² 0.2627, MAE 1,886). No code in this repository, or in the source commit, produces it, so the split, features and target cannot be checked. The *validated* side of V1 holds: under walk-forward evaluation the boosted model's R² is −0.23. |
 
+## Found while revising the paper (1 November 2026)
+
+These are method descriptions in the 4 September version that the code does not support. No `verify_claims.py` check covers them, because each one is a description of the code rather than a number.
+
+| ID | Paper says | Code does |
+|---|---|---|
+| E-COUPLE | 3.2 / Table 2: each layer consumes a typed artefact from another through a shared schema, and violations raise an error | The layers read the same panel but pass nothing to each other, and the only error the code raises is OR-Tools finding no route. By Table 2 row: the pipeline harmonises one stream taxonomy (1). `lca_uncertainty.py` never reads the panel (2). The ranking uses the fixed `TECHNOLOGIES` matrix, not LCA intervals (3). The stage-07 LP has its own pathway factors, which match Table 4 for recycling, composting and AD but not for WtE (330 vs 576) or landfill (400 vs 998) (4). The RL environment is its own circularity-and-budget transition model, not the SD simulator (5). Scenario demand uses a fixed 2.5 % growth rate, not the forecast (6). ARDL always falls back (7). |
+| E-BENCH | Table 1 / 4.1: the panel matches CPCB processing shares and World Bank composition, and SBM-U targets bound the scenario ramps | No code computes the CPCB or World Bank comparisons. The scenario uplifts are fixed constants (`SCENARIOS`), not SBM-U targets. |
+| E-SDVAL | 3.4: Barlas structure, dimensional-consistency and extreme-condition tests | `sd_model.py` reports historical fit, the calibration covariance, a profile likelihood, synthetic recovery and a grid posterior. It runs no extreme-condition or structure test. |
+| E-SENS | 4.16: tornado spreads over the inventory parameters with five provenance tags; no headline rests on an assumed parameter | The tornado covers only WtE (`lca_tornado_wte.csv`). The `source` column is free text. The V8 coupling and the four recovery-pathway factors are assumptions. |
+| E-XREF | 3.9: "Section 4.14 consolidates the effect of each" | The ledger is Section 4.13. |
+
 ## Code notes (no paper claim depends on them)
 
 - `circular_msw_pipeline.py` line 213: `net_emissions_row = gross_emissions - 0.0 * recovered_weighted`, so net equals gross for all 850 rows.
